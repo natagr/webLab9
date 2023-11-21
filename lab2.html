@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Грабець Наталія</title>
+    <link type="text/css" rel="stylesheet" href="lab1.css">
+    <link type="text/css" rel="stylesheet" href="menu.css">
+    <script src="lab2.js"></script>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1>Лабораторна робота №2. Основи моделі DOM та події</h1>
+            <h2>Виконала студентка групи КН-31 Грабець Наталія</h2>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="lab1.html">Лабораторна робота №1</a></li>
+                    <li><a class="menu_select" href="lab2.html">Лабораторна робота №2</a></li>
+                    <li><a href="lab3.html">Лабораторна робота №3</a></li>
+                    <li><a href="lab4.html">Лабораторна робота №4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+        <div class="task">
+            <h2>Завдання на лабораторну роботу №2</h2>
+            <p>
+                На Вашій сторінці є малюнок. При наведенні миші на цей<br>
+                малюнок він повинен змінитися. Коли Ви відведете мишку в<br>
+                сторону, малюнок має набути початкового вигляду.<br>
+                Ввести No телефона (поле вводу) і назву міста (з клавіатури).<br>
+                Якщо введено місто, якого немає в списку, то повідомити про це<br>
+                користувача, інакше вивести No телефона, поставивши перед ним<br>
+                код міста.
+            </p>
+        </div>
+
+
+        <div class="result2">
+
+            <label>Введіть номер телефона
+                <input type="tel" id="phoneNumber" />
+            </label>
+
+            <label>Введіть назву міста
+                <input type="text" id="cityName" onchange="checkCity()" />
+            </label>
+            <div id="cityResult"></div>
+
+
+        </div>
+
+        <div class="picture">
+            <img src="flower1.jpg" id="image" alt="picture">
+        </div>
+
+
+    </main>
+</body>
+
+</html>
